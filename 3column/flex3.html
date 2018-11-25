@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex 三栏式布局</title>
+    <style>
+        .wrapper{
+            display: flex;
+            flex-direction: row;
+            height: 1000px;
+			align-items: stretch;
+            width: 100%;
+        }
+        .middle{
+            flex: 1;
+            background-color: gold;
+        }
+        .left{
+            flex-basis: 100px;
+            background-color: skyblue;
+        }
+        .right{
+            flex-basis: 100px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="left">左侧布局</div>
+    <div class="middle">中间布局</div>
+    <div class="right">右侧布局</div>
+</div>
+</body>
+</html>
